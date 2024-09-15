@@ -2010,3 +2010,45 @@ textarea.form-input::-webkit-resizer { display: none; }
   line-height: 1.6;
   margin-bottom: 5px;
 }
+
+.project-img {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  overflow: hidden; /* Ensure that images don't overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits while maintaining aspect ratio */
+}
+
+
+.info-content {
+  max-width: 100%; /* Ensure the content does not exceed sidebar width */
+}
+
+.info-content .name {
+  color: var(--white-2);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.25px;
+  margin-bottom: 10px;
+  word-wrap: break-word; /* Break text if it overflows */
+}
+
+.contact-info .contact-link {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  word-wrap: break-word; /* Ensure long emails wrap within the sidebar */
+  overflow-wrap: break-word; /* Ensure long emails wrap correctly */
+  white-space: normal; /* Allow the text to wrap to the next line */
+}
+
+.contact-info {
+  max-width: calc(100% - 46px); /* Maintain the correct width */
+  width: calc(100% - 46px);
+}
