@@ -1,17 +1,4 @@
 /*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -2051,4 +2038,46 @@ textarea.form-input::-webkit-resizer { display: none; }
 .contact-info {
   max-width: calc(100% - 46px); /* Maintain the correct width */
   width: calc(100% - 46px);
+}
+
+/* Ensure project details section is hidden by default and properly styled */
+.project-details {
+   position: absolute;
+    display: none;
+    padding: 20px;
+    background-color: var(--eerie-black-2);
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 166px;
+}
+
+/* Adjust the image size to be responsive */
+.project-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 20px 0; /* Add some space between the image and text */
+}
+
+/* Button to go back to projects */
+#back-to-projects {
+  background-color: var(--orange-yellow-crayola);
+  color: var(--white-1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#back-to-projects:hover {
+  background-color: var(--vegas-gold);
+}
+
+/* Ensure the hidden class hides the element */
+.hidden {
+  display: none;
 }
